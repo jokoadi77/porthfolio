@@ -1,8 +1,8 @@
 import {
   algorithms,
   devnotes,
-  upload,
 } from "../assets";
+import upload from '../assets/porto/upload.png'
 
 export const navLinks = [
   {
@@ -70,7 +70,7 @@ const portfolio = [
   {
     name: "Fullstack Photo Uploader CRUD",
     description:
-      "The Image Upload CRUD project is built with Express to provide a simple interface for managing items, including uploading images. Users can create, read, update, and delete items seamlessly. The application allows image uploads via a user-friendly form, storing images on the server and linking them to item entries in a database. This setup facilitates easy management of items, with features like image previews and responsive design. The project emphasizes efficient data handling and ensures a smooth user experience.",
+      "The Image Upload CRUD project is built with Express to provide a simple interface for managing items, including uploading images. Users can create, read, update, and delete items seamlessly.",
     image: upload,
     live:"https://upload-virid.vercel.app/",
     github:"https://github.com/jokoadi77/upload-image",

@@ -51,13 +51,13 @@ const ProjectCard = ({
         <h3 className='text-white font-medium text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl lg:text-5xl leading-tight'>{name}</h3>
         <p className='mt-4 bg-neutral text-secondary text-sm sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl'>{description}</p>
        <div className="flex gap-5">
-       <Link to={live} className="rounded-full mt-5 bg-slate-700 w-9 h-9 flex items-center justify-center relative group">
+       <Link to={live} target="_blank" className="rounded-full mt-5 bg-slate-700 w-9 h-9 flex items-center justify-center relative group">
           <BsArrowUpRight className="items-center" /> 
           <div class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max bg-black text-white text-sm rounded-md px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Live Demo
           </div>
       </Link>
-      <Link to={github} className="rounded-full mt-5 bg-slate-700 w-9 h-9 flex items-center justify-center relative group">
+      <Link target="_blank" to={github} className="rounded-full mt-5 bg-slate-700 w-9 h-9 flex items-center justify-center relative group">
           <BsGithub className="items-center" /> 
           <div class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max bg-black text-white text-sm rounded-md px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Github repositoy
