@@ -1,8 +1,8 @@
 import {
   algorithms,
-  devnotes,
 } from "../assets";
 import upload from '../assets/porto/upload.png'
+import olshop from '../assets/olshop.png'
 
 export const navLinks = [
   {
@@ -68,7 +68,7 @@ const experiences = [
 
 const portfolio = [
   {
-    name: "Fullstack Photo Uploader CRUD",
+    name: "Photo Uploader",
     description:
       "The Image Upload CRUD project is built with Express to provide a simple interface for managing items, including uploading images. Users can create, read, update, and delete items seamlessly.",
     image: upload,
@@ -76,12 +76,12 @@ const portfolio = [
     github:"https://github.com/jokoadi77/upload-image",
   },
   {
-    name: "Dev Notes",
+    name: "Ecommerce Shop",
     description:
-      "A newsletter with over 6,000 readers made for software developers to keep up with this rapidly evolving industry, with a sister platform in progress.",
-    image: devnotes,
-    live:"",
-    github:"",
+      "Ecommerce is an online platform designed to simplify the buying and selling of clothing. With an attractive and user-friendly interface, users can browse various clothing categories, view product details, and make secure purchases. The search and filter features help users quickly find the items they're looking for.",
+    image: olshop,
+    live:"https://ecommerce-iota-beryl-92.vercel.app/",
+    github:"https://github.com/jokoadi77/fe-ecommerce",
   },
   {
     name: "Visually Understanding Algorithms",
