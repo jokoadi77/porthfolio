@@ -1,6 +1,4 @@
-import {
-  algorithms,
-} from "../assets";
+import pokemon from "../assets/pokemon.png";
 import upload from '../assets/porto/upload.png'
 import olshop from '../assets/olshop.png'
 
@@ -84,12 +82,12 @@ const portfolio = [
     github:"https://github.com/jokoadi77/fe-ecommerce",
   },
   {
-    name: "Visually Understanding Algorithms",
+    name: "Pokemon Memory Games",
     description:
-      "A showcase of animated algorithms coded using TypeScript, with the video garnering over 400,000 views.",
-    image: algorithms,
-    live:"",
-    github:"",
+      "The Pokémon Memory Game is a fun and interactive web-based game designed for Pokémon fans of all ages. It challenges players to test their memory skills by matching pairs of Pokémon cards.",
+    image: pokemon,
+    live:"https://pokememorygame-ashen.vercel.app/",
+    github:"https://github.com/jokoadi77/pokememorygame",
   },
 ];
 
