@@ -1,31 +1,94 @@
 import { styles } from "../styles";
 import { motion, useAnimation } from "framer-motion";
 import { textVariant } from "../utils/motion";
+import {RiNodejsLine, RiReactjsFill, RiTailwindCssFill} from 'react-icons/ri'
+import {TbBrandNextjs} from 'react-icons/tb'
+import { SiMysql, SiTypescript } from "react-icons/si";
+import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
 
+
+const iconVarians = (duration) => ({
+    initial: {y: -10},
+    animate: {
+        y: [10, -10],
+        transition: {
+            duration: duration,
+            ease: 'linear',
+            repeat: 'Infinity',
+            repeatType: "reverse"
+        }
+    }
+        
+    })
 const About = () => {
   return (
     <>
-     
-        <section className="py-24 relative" id="about">
-        <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-            <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
-                <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
-                    <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
-                    <motion.div variants={textVariant()}>
-                        <h2 className={`${styles.sectionText}`}>About Me</h2>
-                        </motion.div> 
-                        <p className="text-white text-base font-normal leading-relaxed lg:text-start text-center">
-                        Highly motivated and detail-focused professional with a background in baking, now pursuing a career in frontend development. Proficient in HTML, CSS, JavaScript, and React, with a strong ability to turn creative concepts into interactive, responsive web experiences. Bringing a unique perspective from 5 years in the baking industry, where precision, creativity, and problem-solving were key to success. Excited to apply these transferable skills to deliver exceptional user-focused solutions in development.
-                        </p>
-                    </div>
-                    <button className="sm:w-fit w-full px-3.5 py-2 bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                        <span className="px-1.5 text-white text-sm font-medium leading-6">Resume</span>
-                    </button>
-                </div>
-                <img className="lg:mx-0 mx-auto h-full rounded-3xl object-cover opacity-79" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/302114257/original/96cdd5b8fc2c343d1edcfd617d8d3d974b86160c/be-your-front-end-developer-in-react-js-next-js-typescript.png" alt="about Us image" />
-            </div>
+    <div className="border-b pb-24">
+        <motion.h2 
+         initial={{x: 100, opacity: 0}}
+         whileInView= {{x: 0, opacity: 1}}
+         transition={{duration: 1, delay:0.5}}
+        className={`${styles.sectionText} text-center mb-10`}>Skills</motion.h2>
+        <div className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div
+        variants={iconVarians(1.5)}
+        initial= "initial"
+        animate= 'animate'
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaHtml5  className="text-7xl text-[#ff5733]"/>
+            </motion.div>
+            <motion.div
+            variants={iconVarians(2)}
+            initial= "initial"
+            animate= 'animate'
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaCss3Alt  className="text-7xl text-sky-600"/>
+            </motion.div>
+            <motion.div 
+            variants={iconVarians(2.5)}
+            initial= "initial"
+            animate= 'animate'
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <RiReactjsFill  className="text-7xl text-cyan-400"/>
+            </motion.div>
+            <motion.div
+            variants={iconVarians(3.5)}
+            initial= "initial"
+            animate= 'animate'
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <TbBrandNextjs  className="text-7xl"/>
+            </motion.div>
+            <motion.div
+            variants={iconVarians(3)}
+            initial= "initial"
+            animate= 'animate'
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <RiTailwindCssFill  className="text-7xl text-cyan-400"/>
+            </motion.div>
+            <motion.div
+            variants={iconVarians(4)}
+            initial= "initial"
+            animate= 'animate'
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiTypescript  className="text-7xl text-sky-500"/>
+            </motion.div>
+            <motion.div 
+            variants={iconVarians(5)}
+            initial= "initial"
+            animate= 'animate'
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <RiNodejsLine  className="text-7xl text-green-500"/>
+            </motion.div>
+            <motion.div
+            variants={iconVarians(6)}
+            initial= "initial"
+            animate= 'animate'
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiMysql  className="text-7xl text-[#00758f]"/>
+            </motion.div>
         </div>
-    </section>                    
+    </div>
+       
     </>
   )
 }

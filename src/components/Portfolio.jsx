@@ -53,13 +53,13 @@ const ProjectCard = ({
        <div className="flex gap-5">
        <Link to={live} target="_blank" className="rounded-full mt-5 bg-slate-700 w-9 h-9 flex items-center justify-center relative group">
           <BsArrowUpRight className="items-center" /> 
-          <div class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max bg-black text-white text-sm rounded-md px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max bg-black text-white text-sm rounded-md px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Live Demo
           </div>
       </Link>
       <Link target="_blank" to={github} className="rounded-full mt-5 bg-slate-700 w-9 h-9 flex items-center justify-center relative group">
           <BsGithub className="items-center" /> 
-          <div class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max bg-black text-white text-sm rounded-md px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max bg-black text-white text-sm rounded-md px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Github repositoy
           </div>
       </Link>
